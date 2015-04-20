@@ -1,0 +1,28 @@
+#include <QApplication>
+#include <QLineEdit>
+#include <QHBoxLayout>
+#include <QPushButton>
+#include <QLabel>
+#include <QWidget>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    QLineEdit *lineEdit1 = new QLineEdit;
+    QLineEdit *lineEdit2 = new QLineEdit;
+    QPushButton *button = new QPushButton("Додати числа");
+    QLabel *label = new QLabel();
+    QHBoxLayout *hLayout = new QHBoxLayout;
+    QWidget *window = new QWidget;
+    window->setWindowTitle("Task 3");
+    window->setFixedSize(500,300);
+    label->setText("Результат:");
+    hLayout->addWidget(lineEdit1);
+    hLayout->addWidget(lineEdit2);
+    hLayout->addWidget(button);
+    hLayout->addWidget(label);
+    window->setLayout(hLayout);
+    window->show();
+    return app.exec();
+}
+
