@@ -21,13 +21,10 @@ private:
     QLineEdit *lineEdit2;
     QPushButton *button;
     QLabel *label;
-    int zn1,zn2,sum;
-    QString s;
+    int zn1,zn2,sum1;
+    QString s1,s2,sum2;
 private slots:
   void Sum();
-  void setZn1(QString &str);
-  void setZn2(QString &str);
-  void Sum1();
 };
 
 #endif // TASK2
